@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jae | Art Portfolio</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container nav-wrap">
+        <a class="logo" href="#home">Jae</a>
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+          Menu
+        </button>
+        <nav id="site-nav" class="site-nav">
+          <a href="#gallery">Gallery</a>
+          <a href="#about">About</a>
+          <a href="#exhibitions">Exhibitions</a>
+          <a href="#contact">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section id="home" class="hero">
+        <div class="container">
+            <h1>Jae C</h1>
+        </div>
+      </section>
+
+      <section id="gallery">
+        <div class="container">
+          <p class="lede">
+            Painting, drawing, and mixed media. A short line about the work —
+            mood, subjects, or the question the studio keeps returning to.
+          </p>
+          <h2>Gallery</h2>
+          <p class="section-intro">
+            Browse by year. Each image opens that year’s full collection.
+          </p>
+          <div class="year-index" data-year-index></div>
+        </div>
+      </section>
+
+      <section id="about">
+        <div class="container split">
+          <div>
+            <h2>About</h2>
+            <p>
+              A short artist bio: training, materials, and what the work is
+              about. Keep it to a few sentences so the gallery stays the focus.
+            </p>
+            <p>
+              Mention process if it matters — studio practice, series, or how
+              pieces are made.
+            </p>
+          </div>
+          <ul class="plain-list">
+            <li>Based in [city]</li>
+            <li>Available for commissions</li>
+            <li>Prints and originals by request</li>
+          </ul>
+        </div>
+      </section>
+
+      <section id="exhibitions">
+        <div class="container">
+          <h2>Exhibitions</h2>
+          <p class="section-intro">Shows, residencies, and publications.</p>
+          <ul class="show-list">
+            <li>
+              <span class="show-year">2026</span>
+              <span>Solo or group show title, gallery, city</span>
+            </li>
+            <li>
+              <span class="show-year">2025</span>
+              <span>Residency or fair, location</span>
+            </li>
+            <li>
+              <span class="show-year">2024</span>
+              <span>Group exhibition, gallery, city</span>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section id="contact">
+        <div class="container">
+          <h2>Contact</h2>
+          <p class="section-intro">
+            For sales, commissions, and studio inquiries.
+          </p>
+          <ul class="plain-list">
+            <li><a href="mailto:studio@example.com">studio@example.com</a></li>
+            <li><a href="#">Instagram</a></li>
+            <li>Studio visits by appointment</li>
+          </ul>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <p>© <span id="year"></span> Jae. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script src="js/works-data.js"></script>
+    <script src="js/gallery.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

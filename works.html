@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gallery | Jae</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body class="works-page">
+    <header class="site-header">
+      <div class="container nav-wrap">
+        <a class="logo" href="index.html">Jae</a>
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+          Menu
+        </button>
+        <nav id="site-nav" class="site-nav">
+          <a href="index.html#gallery">Gallery</a>
+          <a href="index.html#about">About</a>
+          <a href="index.html#exhibitions">Exhibitions</a>
+          <a href="index.html#contact">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="works-main">
+      <div class="container">
+        <p class="works-breadcrumb">
+          <a data-year-back href="index.html#gallery">Gallery</a>
+          <span aria-hidden="true"> / </span>
+          <span data-year-heading>Year</span>
+        </p>
+        <p class="section-intro works-hint">
+          Click any piece to view it full size. Use arrow keys or the side buttons to move between works.
+        </p>
+        <div class="works-grid" data-year-works></div>
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <p>© <span id="year"></span> Jae. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script src="js/works-data.js"></script>
+    <script src="js/gallery.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
